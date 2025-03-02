@@ -1,8 +1,15 @@
 """There are 3 errors in this code. Please use your own ability to find them all. Consider this a Python refresher."""
-total = 0
+#Taking inputs to calculate the sum
+def addNum ():
+    total = 0
+    for i in range(5):
+        number = input("Enter a number: ")
+        total += int(number)
+    return total
 
-for i in range(5):
-    number = input("Enter a number: ")
-    total += int(number)
+#Calls upon the function addNum and executes it
+def main():
+    print("The running total is: ",  addNum())
 
-print("The running total is: ",  total)
+if __name__ == "__main__":
+    main()
